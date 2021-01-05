@@ -3,6 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import axios from '@/api/http'
+Vue.prototype.$http = axios
+// this.$http.get()
+// axios.get
+
 Vue.config.productionTip = false
 
 new Vue({
